@@ -40,7 +40,7 @@ async function consumeMessages() {
 }
 
 async function enviarWebsocket() {
-  const websocketUrl = process.env.WEBSOCKET_URL || 'http://localhost:5000';
+  const websocketUrl = process.env.WEBSOCKET_URL || 'https://websockettrafficlly.zapto.org';
   const socket = io(websocketUrl);
 
   socket.on('connect', () => {
